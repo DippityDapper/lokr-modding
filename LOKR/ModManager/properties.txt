@@ -1,3 +1,0 @@
-mod_active=true
-debug_mode=false
-skip_splash_screen=true

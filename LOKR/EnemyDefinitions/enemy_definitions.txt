@@ -19,6 +19,7 @@
 			"baseDamage"  "3"
 
 			"walkSpeed" "3"
+			"armor_regen_per_turn" "1"
 			"rangedAttackRange" "0"
 
 			"reassemble_health" "3"
@@ -62,13 +63,13 @@
 
 			"level" "1"
 				
-			"health_max" "2"
+			"health_max" "3"
 			"armor_max" "0"		
 			
 			
-			"baseDamage"  "3"
+			"baseDamage"  "4"
 
-			"walkSpeed" "2"
+			"walkSpeed" "3"
 			"initiativeModifier" "100"
 			"rangedAttackRange" "0"
 
@@ -77,10 +78,16 @@
 
 		"skills"
 		{
-			
+			"100" "skeleton_bloodless_trait"
  		}
 
  		"defaultSkill" "common_melee_attack"
+		
+		"states"
+ 		{
+ 			"CANT_BE_POISONED" "1"
+            "CANT_BE_BLED" "1"
+ 		}
 	}
 
 	"SkeletonChampion01" 
@@ -174,30 +181,35 @@
 
 			"level" "1"
 				
-			"health_max" "4"
-			"armor_max" "1"	
+			"health_max" "6"
+			"armor_max" "0"	
 			"armor_regen_per_turn" "0"
 			"rangedAttackRange" "0"
 
-			"baseDamage"  "2"
+			"baseDamage"  "3"
 			
-			"walkSpeed" "1"
+			"walkSpeed" "2"
 
 			"initiativeModifier" "2"
 
-			"visualMoveSpeed" "1.2"
-			"visualRunSpeed" "1.2"
+			"visualMoveSpeed" "6"
+			"visualRunSpeed" "6"
 
 		}
 
 
 		"skills"
 		{
-			
-			
+			"100" "skeleton_bloodless_trait"
  		}
 
- 		"defaultSkill" "lifesteal_melee_attack"
+ 		"defaultSkill" "zombie_lifesteal"
+		
+		"states"
+ 		{
+ 			"CANT_BE_POISONED" "1"
+            "CANT_BE_BLED" "1"
+ 		}
 
  		"soundConfig"
 		{
@@ -223,31 +235,37 @@
 
 			"level" "1"
 				
-			"health_max" "5"
-			"armor_max" "2"	
-			"armor_regen_per_turn" "0"
+			"health_max" "6"
+			"armor_max" "3"
+			"armor_regen_per_turn" "1"
 			
-
 			"baseDamage"  "3"
 			
-			"walkSpeed" "1"
+			"walkSpeed" "2"
+			"armorOfThornsDamage"	"1"
+			
 			"rangedAttackRange" "0"
 
 			"initiativeModifier" "2"
 
-			"visualMoveSpeed" "1.2"
-			"visualRunSpeed" "1.2"
+			"visualMoveSpeed" "6"
+			"visualRunSpeed" "6"
 
 		}
 
 
 		"skills"
 		{
-			
-			
- 		}
+			"100" "skeleton_bloodless_trait"
+		}
 
- 		"defaultSkill" "lifesteal_melee_attack"
+ 		"defaultSkill" "zombie_lifesteal"
+
+		"states"
+ 		{
+ 			"CANT_BE_POISONED" "1"
+            "CANT_BE_BLED" "1"
+ 		}
 
  		"soundConfig"
 		{

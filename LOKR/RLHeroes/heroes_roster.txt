@@ -40,6 +40,15 @@
 			"id" : "ArcaneMage"
 		},
 		{
+			"id" : "Necromancer"
+		},
+		{
+			"id" : "Enchantress"
+		},
+		{
+			"id" : "Cleric"
+		},
+		{
 			"id" : "FemaleKnight",
 			"unlockAchievement" : "knight_unlock",
 			"locked" : true

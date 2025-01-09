@@ -2262,6 +2262,372 @@
 	}
 
 
+	"MinionNecromancer" 
+	{
+		"UniqueId" "Necromancer"
+		"Model" "Necromancer"
+		"MetaExo" "ExoSkeletonRenegadeOrcShaman_MetaDataAsset"
+		"Name" "MINION_NECROMANCER"
+		"InheritsFrom" "Hero"
+		"cinematicTags" "Heroe|Minion|Male|Wizard|ct_minion|ct_ranged|ct_magic|ct_perception|ct_knowledge|ct_dark|ct_unholy|ct_|UPGRADES_magic"
+		"nextLevelArchetype" "MinionNecromancerLvl2"
+		"AttackType" "MAGIC"
+		"Icon" "Asst_Banner_Arcane"
+		"Background" "hero_roster_legend_bg_forest"
+		"PortraitBackgroundColor" "cca13d"
+		"UnitOnMap" "Asst_Party_RenegadeOrcShaman"
+
+		"stats"
+		{
+
+			"level" "1"
+			"health_max" "4"
+			"armor_max" "0"
+			"armor_regen_per_turn" "0"
+			"armor_gain_passTurn" "0"
+			"baseDamage"  "3"
+
+			"rangedAttackRange" "4" 
+			"rangedAttackMinRange" "2"
+			
+			"walkSpeed" "1"
+			
+			"visualMoveSpeed" "6"
+			"visualRunSpeed" "6"
+		}
+
+		"skills"
+		{
+			"100" "magic_endturn_trait"
+			"100" "skeleton_bloodless_trait"
+  		}
+		
+		"states"
+ 		{
+ 			"CANT_BE_BLED" "1"
+			"CANT_BE_POISONED" "1"
+ 		}
+
+		"skillProgression"
+ 		{
+ 			"1" 
+ 			{
+ 				"1" "necro_skeleton_summon"
+ 			}
+
+ 			"2" 
+ 			{
+ 				"1" "necro_pestilence"
+ 				"2" "necro_fresh_meat"
+ 			}
+
+ 			"3"
+ 			{
+ 				"1" "necro_unstable_disease"
+ 				"2" "necro_lord_of_the_horde"
+ 			}
+ 		}
+
+ 		"defaultSkill" "necro_bolt_of_sickness"
+
+ 		"soundConfig"
+		{
+			"assetId" "DynamicSoundGroupCultistPriestSounds"
+			"sounds"
+			{
+				"receiveDamage" "krl_va_combatCultistPriest_hit"
+				"receiveArmorDamage" "krl_sfx_combatGeneric_armorHit"
+				"death" "krl_va_combatCultistPriest_death"
+				"walk" ""
+			}
+		}
+	}
+
+
+
+	"MinionNecromancerLvl2" 
+	{
+		"InheritsFrom" "MinionNecromancer"
+		"nextLevelArchetype" "MinionNecromancerLvl3"
+
+		"stats"
+		{
+
+			"level" "2"
+			"health_max" "5"
+			"armor_max" "0"
+			"armor_regen_per_turn" "0"
+			"armor_gain_passTurn" "0"
+			"baseDamage"  "4"
+
+			"rangedAttackRange" "5"
+			"rangedAttackMinRange" "2"
+			
+			
+			"walkSpeed" "1"
+		}
+	}
+
+
+	"MinionNecromancerLvl3" 
+	{
+		"InheritsFrom" "MinionNecromancer"
+
+		"stats"
+		{
+
+			"level" "3"
+			"health_max" "5"
+			"armor_max" "0"
+			"armor_regen_per_turn" "0"
+			"armor_gain_passTurn" "0"
+			"baseDamage"  "5"
+
+			"rangedAttackRange" "5" 
+			"rangedAttackMinRange" "2"
+			
+			
+			"walkSpeed" "2"
+		}
+	}
+
+
+
+"MinionEnchantress" 
+	{
+		"UniqueId" "Enchantress"
+		"Model" "HighEnchantress"
+		"MetaExo" "ExoSkeletonHumanArcaneMage_MetaDataAsset"
+		"Name" "HIGH_ENCHANTRESS"
+		"InheritsFrom" "Hero"
+		"cinematicTags""Minion|Female|ct_medium|ct_female|ct_minion|ct_survival|ct_perception|ct_ranged|ct_magic|LOCKED"
+		"nextLevelArchetype" "MinionEnchantressLvl2"
+		"Icon" "Asst_Banner_Cleric"
+		"Background" "hero_roster_legend_bg_forest"
+		"AttackType" "MAGIC"
+		"PortraitBackgroundColor" "f5ee93"
+		"UnitOnMap" "Asst_Party_Mage"
+
+		"stats"
+		{
+
+			"level" "1"
+							
+			"health_max" "5"
+			"armor_max" "0"
+			"armor_regen_per_turn" "0"
+			"baseDamage"  "4"
+
+			"rangedAttackRange" "3"
+			
+			
+			"walkSpeed" "2"
+		}
+
+		"skills"
+		{
+			"100" "silveroak_forest_step_trait"
+			"101" "silveroak_sylvan_awareness"
+			"100" "magic_endturn_trait"
+ 		}
+
+ 		"skillProgression"
+ 		{
+			"1" 
+ 			{
+ 				"1" "high_enchantress_havoc_spirit"
+ 			}
+
+ 			"2" 
+ 			{
+ 				"1" "high_enchantress_spore_shower"
+				"2" "high_enchantress_natures_blood"
+ 			}
+
+ 			"3"
+ 			{
+ 				"1" "high_enchantress_wild_omen"
+ 				"2" "high_enchantress_leeching_chain02"
+ 			}
+ 		}
+
+ 		"defaultSkill" "high_enchantress_sylvan_bolt"
+
+ 		"soundConfig"
+		{	
+			"assetId" "DynamicSoundGroupSilveroakEnchantressSounds"
+			"sounds"
+			{  
+				"receiveDamage" "krl_va_combatEnchantress_hit"
+				"receiveArmorDamage" "krl_sfx_combatGeneric_armorHit"
+				"death" "krl_va_combatEnchantress_death"
+			}
+		}
+	}
+
+
+	"MinionEnchantressLvl2" 
+	{
+		"InheritsFrom" "MinionEnchantress"
+		"nextLevelArchetype" "MinionEnchantressLvl3"
+
+		"stats"
+		{
+
+			"level" "2"
+							
+			"health_max" "7"
+			"armor_max" "0"
+			"armor_regen_per_turn" "0"
+			"armor_gain_passTurn" "0"
+
+			"baseDamage"  "5"
+
+			"rangedAttackRange" "3" 
+			"walkSpeed" "3"
+		}
+	}
+
+
+	"MinionEnchantressLvl3" 
+	{
+		"InheritsFrom" "MinionEnchantress"
+
+		"stats"
+		{
+
+			"level" "3"
+							
+			"health_max" "10"
+			"armor_max" "0"
+			"armor_regen_per_turn" "0"
+			"armor_gain_passTurn" "0"
+
+			"baseDamage"  "6"
+
+			"rangedAttackRange" "3"
+			"walkSpeed" "3"
+		}
+	}
+
+
+"MinionCleric" 
+	{
+		"UniqueId" "Cleric"
+		"Model" "HumanCleric"
+		"MetaExo" "ExoSkeletonHumanCleric_MetaDataAsset"
+		"Name" "MINION_CLERIC"
+		"InheritsFrom" "Hero"
+		"cinematicTags""Minion|Cleric|Male|Mace|ct_mace|ct_medium|ct_male|ct_minion|ct_human|ct_blunt|ct_melee|ct_holy|ct_martial|ct_medicine|ct_might|ct_religion|ct_social|LOCKED"
+		"nextLevelArchetype" "MinionClericLvl2"
+		"Icon" "Asst_Banner_Cleric"
+		"Background" "hero_roster_legend_bg_forest"
+		"AttackType" "PHYSICAL"
+		"PortraitBackgroundColor" "f5ee93"
+		"UnitOnMap" "Asst_Party_Knight"
+
+		"stats"
+		{
+
+			"level" 				"1"
+							
+			"health_max" 			"5"
+			"armor_max" 			"3"
+			"armor_regen_per_turn" 	"1"
+			"baseDamage"  			"4"
+			"holyPoints"			"0"
+			"armor_gain_passTurn" 	"2"
+
+			"rangedAttackRange" 	"3" 
+			
+			"walkSpeed" 			"2"
+		}
+
+		"skills"
+		{
+			"11" 	"oportunity_attack"
+			"100" 	"mighty_endturn_trait"
+ 		}
+
+ 		"skillProgression"
+ 		{
+			"1" 
+ 			{
+ 				"1" "cleric_prayer"
+ 			}
+
+ 			"2" 
+ 			{
+ 				"1" "cleric_healing_light"
+ 				"2" "knight_hold_the_line"
+ 			}
+
+ 			"3"
+ 			{
+ 				"1" "gerald_martyrs_prayer"
+ 				"2" "gerald_martyrs_inspiration"
+ 			}
+ 		}
+
+ 		"defaultSkill" "cleric_whack"
+
+ 		"soundConfig"
+		{
+			"sounds"
+			{
+				"receiveDamage" "krl_sfx_combatGeneric_humanMaleHit"
+				"receiveArmorDamage" "krl_sfx_combatGeneric_armorHit"
+				"death" "krl_sfx_combatGeneric_humanMaleDeath"
+			}
+		}
+	}
+
+
+	"MinionClericLvl2"
+	{
+		"InheritsFrom" "MinionCleric"
+		"nextLevelArchetype" "MinionClericLvl3"
+
+		"stats"
+		{
+
+			"level" 				"2"
+							
+			"health_max" 			"6"
+			"armor_max" 			"4"
+			"armor_regen_per_turn" 	"2"
+			"baseDamage"  			"5"
+			"holyPoints"			"0"
+			"armor_gain_passTurn" 	"2"
+			
+			"rangedAttackRange" 	"3" 
+
+			"walkSpeed" 			"2"
+		}
+	}
+
+
+	"MinionClericLvl3" 
+	{
+		"InheritsFrom" "MinionCleric"
+
+		"stats"
+		{
+
+			"level" 				"3"
+							
+			"health_max" 			"8"
+			"armor_max" 			"5"
+			"armor_regen_per_turn" 	"2"
+			"baseDamage"  			"6"
+			"holyPoints"			"0"
+			"armor_gain_passTurn" 	"2"
+
+			"rangedAttackRange" 	"4"
+
+			"walkSpeed" 			"2"
+		}
+	}
 
 
 
@@ -2924,167 +3290,6 @@
  		"defaultSkill" "common_melee_attack"
 	}
 
-	"MinionCleric" 
-	{
-		"Model" "HumanCleric"
-		"MetaExo" "ExoSkeletonHumanCleric_MetaDataAsset"
-		"Name" "MINION_CLERIC"
-		"InheritsFrom" "Hero"
-		"cinematicTags""Minion|Cleric|Male|Mace|ct_mace|ct_medium|ct_male|ct_minion|ct_human|ct_blunt|ct_melee|ct_holy|ct_martial|ct_medicine|ct_might|ct_religion|ct_social|LOCKED"
-		"nextLevelArchetype" "MinionClericLvl2"
-		"AttackType" "PHYSICAL"
-		"Icon" "Asst_Banner_Cleric"
-		"Background" "hero_roster_legend_bg_forest"
-
-		"stats"
-		{
-
-			"level" "1"
-							
-			"health_max" "5"
-			"armor_max" "3"
-			"armor_regen_per_turn" "1"
-			"baseDamage"  "3"
-
-			"rangedAttackRange" "3" 
-			
-			
-			"walkSpeed" "2"
-		}
-
-		"skills"
-		{
-			"11" "oportunity_attack"
- 		}
-
- 		"skillPool"
- 		{
- 			"1" "healing_light"
- 			"2" "blessing_of_battle"
- 			"3" "sacred_vengeance"
- 		}
-
- 		"defaultSkill" "common_melee_attack"
-
- 		"soundConfig"
-		{
-			"sounds"
-			{
-				"receiveDamage" "krl_sfx_combatGeneric_humanMaleHit"
-				"receiveArmorDamage" "krl_sfx_combatGeneric_armorHit"
-				"death" "krl_sfx_combatGeneric_humanMaleDeath"
-			}
-		}
-	}
-
-
-	"MinionClericLvl2" 
-	{
-		"InheritsFrom" "MinionCleric"
-		"nextLevelArchetype" "MinionClericLvl3"
-
-		"stats"
-		{
-
-			"level" "2"
-							
-			"health_max" "6"
-			"armor_max" "4"
-			"armor_regen_per_turn" "1"
-			"baseDamage"  "3"
-
-			"rangedAttackRange" "3" 
-			"walkSpeed" "2"
-		}
-
-		"skills"
-		{
-			"11" "oportunity_attack"
- 		}
-
- 		"defaultSkill" "common_melee_attack"
-	}
-
-
-	"MinionClericLvl3" 
-	{
-		"InheritsFrom" "MinionCleric"
-		"nextLevelArchetype" "MinionClericLvl4"
-
-		"stats"
-		{
-
-			"level" "3"
-							
-			"health_max" "6"
-			"armor_max" "4"
-			"armor_regen_per_turn" "1"
-			"baseDamage"  "4"
-
-			"rangedAttackRange" "3" 
-			"walkSpeed" "2"
-		}
-
-		"skills"
-		{
-			"11" "oportunity_attack"
- 		}
-
- 		"defaultSkill" "common_melee_attack"
-	}
-
-	"MinionClericLvl4" 
-	{
-		"InheritsFrom" "MinionCleric"
-		"nextLevelArchetype" "MinionClericLvl5"
-
-		"stats"
-		{
-
-			"level" "3"
-							
-			"health_max" "6"
-			"armor_max" "4"
-			"armor_regen_per_turn" "2"
-			"baseDamage"  "4"
-
-			"rangedAttackRange" "3" 
-			"walkSpeed" "3"
-		}
-
-		"skills"
-		{
-			"11" "oportunity_attack"
- 		}
-
- 		"defaultSkill" "common_melee_attack"
-	}
-
-	"MinionClericLvl5" 
-	{
-		"InheritsFrom" "MinionCleric"
-
-		"stats"
-		{
-
-			"level" "3"
-							
-			"health_max" "7"
-			"armor_max" "4"
-			"armor_regen_per_turn" "2"
-			"baseDamage"  "4"
-
-			"rangedAttackRange" "4" 
-			"walkSpeed" "3"
-		}
-
-		"skills"
-		{
-			"11" "oportunity_attack"
- 		}
-
- 		"defaultSkill" "common_melee_attack"
-	}
 
 
 

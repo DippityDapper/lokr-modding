@@ -13,8 +13,8 @@
     {
         "01"
         {
-            "var_type"      "FIELD_EXPRESSION"
-            "pointAmount"   "stat(%CASTER, #level)"
+            "var_type"      "FIELD_FLOAT"
+            "pointAmount"   "2"
         }
 
         "02"
@@ -45,18 +45,9 @@
             "IconPriority"               "24"
             "EffectName"                 "KnightHoldTheLineStatusFXMega"
 
-            "OnRemoved"
-            {
-                "GiveArmor"
-                {
-                    "Target"            "%TARGET"
-                    "ArmorAmount"       "0"
-                }
-            }
-
             "PropertiesAdd"
             {
-                "holyPoints"             "expr(%pointAmount)"
+                "holyPoints"             "%pointAmount"
             }
         }
     }

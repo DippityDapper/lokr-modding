@@ -2402,7 +2402,7 @@
 		"InheritsFrom" "Hero"
 		"cinematicTags""Minion|Female|ct_medium|ct_female|ct_minion|ct_survival|ct_perception|ct_ranged|ct_magic|LOCKED"
 		"nextLevelArchetype" "MinionEnchantressLvl2"
-		"Icon" "Asst_Banner_Cleric"
+		"Icon" "Asst_Banner_Arcane"
 		"Background" "hero_roster_legend_bg_forest"
 		"AttackType" "MAGIC"
 		"PortraitBackgroundColor" "f5ee93"
@@ -2535,10 +2535,10 @@
 			"armor_max" 			"3"
 			"armor_regen_per_turn" 	"1"
 			"baseDamage"  			"4"
-			"holyPoints"			"0"
+			"holyPoints"			"2"
 			"armor_gain_passTurn" 	"2"
 
-			"rangedAttackRange" 	"3" 
+			"rangedAttackRange" 	"2" 
 			
 			"walkSpeed" 			"2"
 		}
@@ -2558,14 +2558,14 @@
 
  			"2" 
  			{
- 				"1" "cleric_healing_light"
- 				"2" "knight_hold_the_line"
+ 				"1" "cleric_blessing_of_providence"
+ 				"2" "cleric_solemn_vow"
  			}
 
  			"3"
  			{
- 				"1" "gerald_martyrs_prayer"
- 				"2" "gerald_martyrs_inspiration"
+ 				"1" "cleric_healing_light"
+ 				"2" "cleric_holy_wrath"
  			}
  		}
 
@@ -2600,7 +2600,7 @@
 			"holyPoints"			"0"
 			"armor_gain_passTurn" 	"2"
 			
-			"rangedAttackRange" 	"3" 
+			"rangedAttackRange" 	"2" 
 
 			"walkSpeed" 			"2"
 		}
@@ -2623,7 +2623,7 @@
 			"holyPoints"			"0"
 			"armor_gain_passTurn" 	"2"
 
-			"rangedAttackRange" 	"4"
+			"rangedAttackRange" 	"2"
 
 			"walkSpeed" 			"2"
 		}

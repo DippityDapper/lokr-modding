@@ -1,0 +1,35 @@
+"UNIT_MINION_CLERIC_NAME_0001" = "Cleric"
+"UNIT_MINION_CLERIC_LORE" = "The clerics enact their holy power through combat and devout study of divine magic. They speak their message softly but carry a big stick for good measure."
+
+
+"SKILL_cleric_whack_NAME" = "Whack"
+"SKILL_cleric_whack_DESCRIPTION" = "Strikes the target, dealing bonus damage based on his <style="buff">Faith</style>."
+"SKILL_cleric_whack_DESCRIPTION_DATA" = "Damage: <style="rangeofdamage">{MinDamage} - {MaxDamage} {icon#damagePhysical}</style>\nFaith Bonus: {holyBonus}\nRange: <style="highlight">MELEE</style>"
+
+"SKILL_cleric_prayer_NAME" = "Prayer"
+"SKILL_cleric_prayer_DESCRIPTION" = "An incantation that grants <style="buff">Faith</style> to the Cleric, which can enhance his other abilities."
+"SKILL_cleric_prayer_DESCRIPTION_DATA" = "Added Points: <style="buff">{pointAmount}</style>\nRange: <style="highlight">SELF</style>\n<style="highlight">Current Faith:</style> <style="highlight">{HolyPoints}</style>"
+
+"SKILL_cleric_blessing_of_providence_NAME" = "Blessing of Providence"
+"SKILL_cleric_blessing_of_providence_DESCRIPTION" = "Grants the targeted unit and himself damage reduction from all sources <style="highlight">and</style> increased attack. The duration scales based on Faith."
+"SKILL_cleric_blessing_of_providence_DESCRIPTION_DATA" = "Attack Bonus: <style="buff">+{extraDamage} {icon#damagePhysical}</style>\nDamage Reduction: <style="buff">-{damageReduction}</style>\nRange: <style="highlight">{AbilityCastRange}</style>\nDuration: <style="highlight">{duration}</style> {icon#turns}"
+
+"SKILL_cleric_solemn_vow_NAME" = "Solemn Vow"
+"SKILL_cleric_solemn_vow_DESCRIPTION" = "Calls down a curse on an enemy, preventing them from dealing damage to your allies."
+"SKILL_cleric_solemn_vow_DESCRIPTION_DATA" = "Duration: <style="highlight">{duration}</style> {icon#turns}"
+
+"SKILL_cleric_healing_light_NAME" = "Divine Intervention"
+"SKILL_cleric_healing_light_DESCRIPTION" = "Channels his <style="buff">Faith</style> to summon a beam of healing light, which will restore HP and remove all <style="debuff">weakened</style> debuffs."
+"SKILL_cleric_healing_light_DESCRIPTION_DATA" = "Healing: <style="buff">{heal} {icon#statHP} </style>\nRange: <style="highlight">GLOBAL</style>"
+"SKILL_cleric_healing_light_DESCRIPTION_EXTRA" = "<style="extra">Cannot be executed until the Cleric has {faithMin} Faith.</style>"
+
+"SKILL_cleric_holy_wrath_NAME" = "Holy Wrath"
+"SKILL_cleric_holy_wrath_DESCRIPTION" = "Once he has gathered enough <style="buff">Faith</style>, the Cleric may strike an enemy, dealing a range of true damage to an enemy."
+"SKILL_cleric_holy_wrath_DESCRIPTION_DATA" = "Damage: <style="rangeofdamage">{minDamage} - {maxDamage} {icon#damageTrue}</style>\nRange: <style="highlight">{AbilityCastRange}</style>"
+"SKILL_cleric_holy_wrath_DESCRIPTION_EXTRA" = "<style="extra">Cannot be executed until the Cleric has {faithMin} Faith.</style>"
+
+"COMBAT_MODIFIER_cleric_holy_points_modifier_TITLE" = "Devout"
+"COMBAT_MODIFIER_cleric_holy_points_modifier_DESCRIPTION" = "This unit is enhanced by their Faith."
+
+"COMBAT_MODIFIER_modifier_cleric_vow_of_peace_TITLE" = "Oath of Peace"
+"COMBAT_MODIFIER_modifier_cleric_vow_of_peace_DESCRIPTION" = "This unit's damage is greatly decreased."

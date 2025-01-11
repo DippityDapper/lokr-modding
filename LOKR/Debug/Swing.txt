@@ -1,7 +1,0 @@
-Strikes an enemy with a swing of its blade, dealing damage.
-
-<style="epic">EPIC:</style> Restores HP if the target is <style="debuff">weakened</style>.
-
-Damage: <style="rangeofdamage">19 - 21 <sprite name=damagePhysical></style>.
-Epic healing: <style="buff">1 <sprite name=statHP></style>
-Range: <style="highlight">MELEE</style>

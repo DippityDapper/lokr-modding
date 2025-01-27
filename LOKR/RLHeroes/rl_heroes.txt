@@ -2266,7 +2266,7 @@
 	{
 		"UniqueId" "Necromancer"
 		"Model" "Necromancer"
-		"MetaExo" "ExoSkeletonRenegadeOrcShaman_MetaDataAsset"
+		"MetaExo" "ExoSkeletonHumanSylvanElf_MetaDataAsset"
 		"Name" "MINION_NECROMANCER"
 		"InheritsFrom" "Hero"
 		"cinematicTags" "Heroe|Minion|Male|Wizard|ct_minion|ct_ranged|ct_magic|ct_perception|ct_knowledge|ct_dark|ct_unholy|ct_|UPGRADES_magic"
@@ -2332,13 +2332,8 @@
 
  		"soundConfig"
 		{
-			"assetId" "DynamicSoundGroupCultistPriestSounds"
 			"sounds"
 			{
-				"receiveDamage" "krl_va_combatCultistPriest_hit"
-				"receiveArmorDamage" "krl_sfx_combatGeneric_armorHit"
-				"death" "krl_va_combatCultistPriest_death"
-				"walk" ""
 			}
 		}
 	}
@@ -2455,12 +2450,17 @@
 
  		"soundConfig"
 		{	
-			"assetId" "DynamicSoundGroupSilveroakEnchantressSounds"
+			"assetId" "DynamicSoundGroupGeraldSounds"
 			"sounds"
-			{  
-				"receiveDamage" "krl_va_combatEnchantress_hit"
+			{
+				"receiveDamage" "krl_va_combatGerald_hit"
 				"receiveArmorDamage" "krl_sfx_combatGeneric_armorHit"
-				"death" "krl_va_combatEnchantress_death"
+				"death" "krl_va_combatGerald_death"
+				"useSkill" "krl_va_combatGerald_action"
+				"startTurn" "krl_va_combatGerald_turnStart"
+				"promote" "krl_va_combatGerald_promote"
+				"victory" "krl_va_combatGerald_victory"
+				"selectHero" "krl_va_combatGerald_select"
 			}
 		}
 	}
@@ -2573,11 +2573,17 @@
 
  		"soundConfig"
 		{
+			"assetId" "DynamicSoundGroupGeraldSounds"
 			"sounds"
 			{
-				"receiveDamage" "krl_sfx_combatGeneric_humanMaleHit"
+				"receiveDamage" "krl_va_combatGerald_hit"
 				"receiveArmorDamage" "krl_sfx_combatGeneric_armorHit"
-				"death" "krl_sfx_combatGeneric_humanMaleDeath"
+				"death" "krl_va_combatGerald_death"
+				"useSkill" "krl_va_combatGerald_action"
+				"startTurn" "krl_va_combatGerald_turnStart"
+				"promote" "krl_va_combatGerald_promote"
+				"victory" "krl_va_combatGerald_victory"
+				"selectHero" "krl_va_combatGerald_select"
 			}
 		}
 	}

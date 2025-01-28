@@ -2181,7 +2181,7 @@
 		"skills"
 		{
 			"100" 		"agility_trait"
-			"101"     "dodge_trait"
+			"101"     	"dodge_trait"
 			
 			"102" 		"athletics_endturn_trait"
  		}
@@ -2266,7 +2266,7 @@
 	{
 		"UniqueId" "Necromancer"
 		"Model" "Necromancer"
-		"MetaExo" "ExoSkeletonHumanSylvanElf_MetaDataAsset"
+		"MetaExo" "ExoSkeletonRenegadeOrcShaman_MetaDataAsset"
 		"Name" "MINION_NECROMANCER"
 		"InheritsFrom" "Hero"
 		"cinematicTags" "Heroe|Minion|Male|Wizard|ct_minion|ct_ranged|ct_magic|ct_perception|ct_knowledge|ct_dark|ct_unholy|ct_|UPGRADES_magic"
@@ -2332,8 +2332,16 @@
 
  		"soundConfig"
 		{
+			"assetId" "DynamicSoundGroupGeraldSounds"
 			"sounds"
 			{
+				"receiveDamage" 		"krl_va_combatGerald_hit"
+				"receiveArmorDamage" 	"krl_sfx_combatGeneric_armorHit"
+				"death" 				"krl_va_combatGerald_death"
+				"useSkill" 				"krl_va_combatGerald_action"
+				"startTurn" 			"krl_va_combatGerald_turnStart"
+				"promote" 				"krl_va_combatGerald_promote"
+				"selectHero" 			"krl_va_combatGerald_select"
 			}
 		}
 	}
@@ -2388,14 +2396,14 @@
 
 
 
-"MinionEnchantress" 
+	"MinionEnchantress" 
 	{
 		"UniqueId" "Enchantress"
 		"Model" "HighEnchantress"
 		"MetaExo" "ExoSkeletonHumanArcaneMage_MetaDataAsset"
 		"Name" "HIGH_ENCHANTRESS"
 		"InheritsFrom" "Hero"
-		"cinematicTags""Minion|Female|ct_medium|ct_female|ct_minion|ct_survival|ct_perception|ct_ranged|ct_magic|LOCKED"
+		"cinematicTags""Minion|Female|ct_female|ct_minion|ct_survival|ct_wisdom|ct_ranged|ct_magic|UPGRADES_magic"
 		"nextLevelArchetype" "MinionEnchantressLvl2"
 		"Icon" "Asst_Banner_Arcane"
 		"Background" "hero_roster_legend_bg_forest"
@@ -2450,17 +2458,16 @@
 
  		"soundConfig"
 		{	
-			"assetId" "DynamicSoundGroupGeraldSounds"
+			"assetId" "DynamicSoundGroupSilveroakEnchantressSounds"
 			"sounds"
-			{
-				"receiveDamage" "krl_va_combatGerald_hit"
-				"receiveArmorDamage" "krl_sfx_combatGeneric_armorHit"
-				"death" "krl_va_combatGerald_death"
-				"useSkill" "krl_va_combatGerald_action"
-				"startTurn" "krl_va_combatGerald_turnStart"
-				"promote" "krl_va_combatGerald_promote"
-				"victory" "krl_va_combatGerald_victory"
-				"selectHero" "krl_va_combatGerald_select"
+			{  
+				"receiveDamage" 		"krl_va_combatEnchantress_hit"
+				"receiveArmorDamage" 	"krl_sfx_combatGeneric_armorHit"
+				"death" 				"krl_va_combatEnchantress_death"
+				"useSkill" 				"krl_va_combatGerald_action"
+				"startTurn" 			"krl_va_combatGerald_turnStart"
+				"promote" 				"krl_va_combatGerald_promote"
+				"selectHero" 			"krl_va_combatGerald_select"
 			}
 		}
 	}
@@ -2511,14 +2518,14 @@
 	}
 
 
-"MinionCleric" 
+	"MinionCleric" 
 	{
 		"UniqueId" "Cleric"
 		"Model" "HumanCleric"
 		"MetaExo" "ExoSkeletonHumanCleric_MetaDataAsset"
 		"Name" "MINION_CLERIC"
 		"InheritsFrom" "Hero"
-		"cinematicTags""Minion|Cleric|Male|Mace|ct_mace|ct_medium|ct_male|ct_minion|ct_human|ct_blunt|ct_melee|ct_holy|ct_martial|ct_medicine|ct_might|ct_religion|ct_social|LOCKED"
+		"cinematicTags""Minion|Cleric|Male|ct_minion|ct_human|ct_holy|ct_magic|ct_social|ct_wisdom|UPGRADES_magic"
 		"nextLevelArchetype" "MinionClericLvl2"
 		"Icon" "Asst_Banner_Cleric"
 		"Background" "hero_roster_legend_bg_forest"
@@ -2532,40 +2539,40 @@
 			"level" 				"1"
 							
 			"health_max" 			"5"
-			"armor_max" 			"3"
-			"armor_regen_per_turn" 	"1"
-			"baseDamage"  			"4"
-			"holyPoints"			"2"
-			"armor_gain_passTurn" 	"2"
+			"armor_max" 			"4"
+			"armor_regen_per_turn" 	"0"
+			"baseDamage"  			"3"
+			"holyPoints"			"0"
+			"armor_gain_passTurn" 	"0"
 
-			"rangedAttackRange" 	"2" 
+			"rangedAttackRange" 	"3" 
 			
 			"walkSpeed" 			"2"
 		}
 
 		"skills"
 		{
-			"11" 	"oportunity_attack"
-			"100" 	"mighty_endturn_trait"
+			"11" 	"cleric_unshakable"
+			"100" 	"magic_endturn_trait"
  		}
 
  		"skillProgression"
  		{
 			"1" 
  			{
- 				"1" "cleric_prayer"
+ 				"1" "cleric_communion"
  			}
 
  			"2" 
  			{
- 				"1" "cleric_blessing_of_providence"
- 				"2" "cleric_solemn_vow"
+ 				"1" "cleric_salvation"
+ 				"2" "cleric_providence"
  			}
 
  			"3"
  			{
- 				"1" "cleric_healing_light"
- 				"2" "cleric_holy_wrath"
+ 				"1" "cleric_divine_intervention"
+ 				"2" "cleric_smite"
  			}
  		}
 
@@ -2576,14 +2583,13 @@
 			"assetId" "DynamicSoundGroupGeraldSounds"
 			"sounds"
 			{
-				"receiveDamage" "krl_va_combatGerald_hit"
-				"receiveArmorDamage" "krl_sfx_combatGeneric_armorHit"
-				"death" "krl_va_combatGerald_death"
-				"useSkill" "krl_va_combatGerald_action"
-				"startTurn" "krl_va_combatGerald_turnStart"
-				"promote" "krl_va_combatGerald_promote"
-				"victory" "krl_va_combatGerald_victory"
-				"selectHero" "krl_va_combatGerald_select"
+				"receiveDamage" 		"krl_sfx_combatGeneric_humanMaleHit"
+				"receiveArmorDamage" 	"krl_sfx_combatGeneric_armorHit"
+				"death" 				"krl_sfx_combatGeneric_humanMaleDeath"
+				"useSkill" 				"krl_va_combatGerald_action"
+				"startTurn" 			"krl_va_combatGerald_turnStart"
+				"promote" 				"krl_va_combatGerald_promote"
+				"selectHero" 			"krl_va_combatGerald_select"
 			}
 		}
 	}
@@ -2601,12 +2607,11 @@
 							
 			"health_max" 			"6"
 			"armor_max" 			"4"
-			"armor_regen_per_turn" 	"2"
-			"baseDamage"  			"5"
+			"armor_regen_per_turn" 	"0"
+			"baseDamage"  			"4"
 			"holyPoints"			"0"
-			"armor_gain_passTurn" 	"2"
 			
-			"rangedAttackRange" 	"2" 
+			"rangedAttackRange" 	"3" 
 
 			"walkSpeed" 			"2"
 		}
@@ -2623,20 +2628,146 @@
 			"level" 				"3"
 							
 			"health_max" 			"8"
-			"armor_max" 			"5"
-			"armor_regen_per_turn" 	"2"
-			"baseDamage"  			"6"
+			"armor_max" 			"4"
+			"armor_regen_per_turn" 	"0"
+			"baseDamage"  			"5"
 			"holyPoints"			"0"
 			"armor_gain_passTurn" 	"2"
 
-			"rangedAttackRange" 	"2"
+			"rangedAttackRange" 	"4"
 
 			"walkSpeed" 			"2"
 		}
 	}
 
 
+	"MinionAssassin" 
+	{
+		"UniqueId" "Assassin"
+		"Model" "HumanRogueFemale"
+		"MetaExo" "ExoSkeletonHumanSylvanElf_MetaDataAsset"
+		"Name" "MINION_ASSASSIN"
+		"InheritsFrom" "Hero"
+		"cinematicTags" "Heroe|Minion|Female|ct_minion|ct_athletics|ct_social|ct_perception|UPGRADES_athletic"
+		"nextLevelArchetype" "MinionAssassinLvl2"
+		"AttackType" "PHYSICAL"
+		"Icon" "Asst_Banner_Ranger"
+		"Background" "hero_roster_legend_bg_forest"
+		"UnitOnMap" "Asst_Party_SylvanElf"
+		"PortraitBackgroundColor" "7d8f28"
 
+		"stats"
+		{
+			"level" "1"
+
+			"health_max" "4"
+			"armor_max" "0"
+			"armor_regen_per_turn" "2"
+
+			"baseDamage"  "4"
+
+			"rangedAttackRange" "2"
+			"rangedAttackMinRange" "1"
+			"evasion" "0.4"
+			
+			"visualMoveSpeed" "4" 
+			"visualRunSpeed" "4"
+			"walkSpeed" "3"
+		}
+
+		"skills"
+		{
+			"100" 		"agility_trait"
+			"101"     	"dodge_trait"
+			
+			"102" 		"athletics_endturn_trait"
+ 		}
+
+		"skillProgression"
+ 		{
+ 			"1" 
+ 			{
+ 				"1" "assassin_stealth"
+ 			}
+
+ 			"2" 
+ 			{
+ 				"1" "assassin_counterattack"
+ 				"2" "assassin_dagger"
+ 			}
+
+ 			"3"
+ 			{
+ 				"1" "assassin_backstab"
+ 				"2" "assassin_quickstep"
+ 			}
+ 		}
+
+ 		"defaultSkill" "assassin_lethal_strike"
+
+ 		"soundConfig"
+		{
+			"assetId" "DynamicSoundGroupGeraldSounds"
+			"sounds"
+			{
+				"receiveDamage" 		"krl_sfx_combatGeneric_humanFemaleHit"
+				"receiveArmorDamage" 	"krl_sfx_combatGeneric_armorHit"
+				"death" 				"krl_sfx_combatGeneric_humanFemaleDeath"
+				"useSkill" 				"krl_va_combatGerald_action"
+				"startTurn" 			"krl_va_combatGerald_turnStart"
+				"promote" 				"krl_va_combatGerald_promote"
+				"selectHero" 			"krl_va_combatGerald_select"
+			}
+		}
+	}
+
+
+	"MinionAssassinLvl2" 
+	{
+		"InheritsFrom" "MinionAssassin"
+		"nextLevelArchetype" "MinionAssassinLvl3"
+
+		"stats"
+		{
+			"level" "2"
+
+			"health_max" "5"
+			"armor_max" "0"
+			"armor_regen_per_turn" "2"
+
+			"baseDamage"  "5"
+			
+			"evasion" "0.4"
+
+			"walkSpeed" "3"
+		}
+	}
+
+	"MinionAssassinLvl3" 
+	{
+		"InheritsFrom" "MinionAssassin"
+
+		"stats"
+		{
+			"level" "3"
+
+			"health_max" "6"
+			"armor_max" "0"
+			"armor_regen_per_turn" "2"
+
+			"baseDamage"  "6"
+			
+			"evasion" "0.4"
+			
+			"walkSpeed" "3"
+		}
+	}
+	
+	
+	
+	
+	
+	
 
 
 
@@ -3123,178 +3254,6 @@
  		"defaultSkill" "common_ranged_spell_attack"
 	}
 
-	"MinionRogue" 
-	{
-		"Model" "HumanRogueFemale"
-		"Name" "MINION_ROGUE"
-		"InheritsFrom" "Hero"
-		
-		"nextLevelArchetype" "MinionRogueLvl2"
-		"AttackType" "PHYSICAL"
-		"Background" "hero_roster_legend_bg_forest"
-
-		"stats"
-		{
-
-			"level" "1"
-				
-			"health_max" "5"
-			"armor_max" "1"
-			"armor_regen_per_turn" "1"
-			"baseDamage"  "3"
-
-			"rangedAttackRange" "3" 
-			
-			"evasion" "0.15" 
-			
-			"walkSpeed" "3"
-		}
-
-		"skills"
-		{
-			"11" "oportunity_attack"
- 		}
-
- 		"skillPool"
- 		{
- 			"1" "viper_strike"
- 			"2" "shadow_dodge"
- 			"3" "chink_in_the_armor"
- 		}
-
- 		"defaultSkill" "common_melee_attack"
-
- 		"soundConfig"
-		{
-			"sounds"
-			{
-				"receiveDamage" "krl_sfx_combatGeneric_humanFemaleHit"
-				"receiveArmorDamage" "krl_sfx_combatGeneric_armorHit"
-				"death" "krl_sfx_combatGeneric_humanFemaleDeath"
-			}
-		}
-	}
-
-
-	"MinionRogueLvl2" 
-	{
-		"InheritsFrom" "MinionRogue"
-		"nextLevelArchetype" "MinionRogueLvl3"
-
-		"stats"
-		{
-
-			"level" "2"
-				
-			"health_max" "6"
-			"armor_max" "1"
-			"armor_regen_per_turn" "1"
-			"baseDamage"  "4"
-
-			"rangedAttackRange" "3" 
-			
-			"evasion" "0.15" 
-			
-			"walkSpeed" "3"
-		}
-
-		"skills"
-		{
-			"11" "oportunity_attack"
- 		}
-
- 		"defaultSkill" "common_melee_attack"
-	}
-
-
-	"MinionRogueLvl3" 
-	{
-		"InheritsFrom" "MinionRogue"
-		"nextLevelArchetype" "MinionRogueLvl4"
-
-		"stats"
-		{
-
-			"level" "3"
-				
-			"health_max" "6"
-			"armor_max" "1"
-			"armor_regen_per_turn" "1"
-			"baseDamage"  "4"
-
-			"rangedAttackRange" "3" 
-			
-			"evasion" "0.25" 
-			
-			"walkSpeed" "4"
-		}
-
-		"skills"
-		{
-			"11" "oportunity_attack"
- 		}
-
- 		"defaultSkill" "common_melee_attack"
-	}
-
-	"MinionRogueLvl4" 
-	{
-		"InheritsFrom" "MinionRogue"
-		"nextLevelArchetype" "MinionRogueLvl5"
-
-		"stats"
-		{
-
-			"level" "4"
-				
-			"health_max" "6"
-			"armor_max" "2"
-			"armor_regen_per_turn" "1"
-			"baseDamage"  "5"
-
-			"rangedAttackRange" "3" 
-			
-			"evasion" "0.25" 
-			
-			"walkSpeed" "4"
-		}
-
-		"skills"
-		{
-			"11" "oportunity_attack"
- 		}
-
- 		"defaultSkill" "common_melee_attack"
-	}
-
-	"MinionRogueLvl5" 
-	{
-		"InheritsFrom" "MinionRogue"
-
-		"stats"
-		{
-
-			"level" "5"
-				
-			"health_max" "7"
-			"armor_max" "2"
-			"armor_regen_per_turn" "1"
-			"baseDamage"  "5"
-
-			"rangedAttackRange" "3" 
-			
-			"evasion" "0.5" 
-			
-			"walkSpeed" "4"
-		}
-
-		"skills"
-		{
-			"11" "oportunity_attack"
- 		}
-
- 		"defaultSkill" "common_melee_attack"
-	}
 
 
 

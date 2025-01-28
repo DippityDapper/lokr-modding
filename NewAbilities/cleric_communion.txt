@@ -1,0 +1,68 @@
+"cleric_communion"
+{       
+    "AbilityBehavior"           "UNIT_TARGET | POSITIVE_EFFECT"
+    "AbilityTeamFilter"         "TEAM_FRIENDLY"
+    "AbilityCustomTargetFilter" "not(equal(%UNIT, %SOURCE))"
+
+    "AnimationID"               "SpellCastA"
+    "CastFXId"                  "GenericHolyCastFXMega"
+    "Icon"                      "BlessingOfBattle"
+
+    "AbilityCastRange"          "stat(%CASTER, #rangedAttackRange)"
+    "AbilityCooldown"           "4"
+    "AbilityAPCost"             "1"
+
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"          "FIELD_FLOAT"
+            "duration"          "2"
+        }
+        
+        "02"
+        {
+            "var_type"          "FIELD_FLOAT"
+            "extraDamage"       "1"
+        }
+		
+    }
+
+
+    "OnAbilityAction"
+    {
+        "ApplyModifier"
+        {
+            "ModifierName"  "modifier_communion"
+            "Target"        "%TARGET"
+            "Duration"      "%duration"
+        }
+
+        "ApplyModifier"
+        {
+            "ModifierName"  "modifier_communion"
+            "Target"        "%CASTER"
+            "Duration"      "%duration"
+        }
+
+    }
+
+
+    "Modifiers"
+    {
+        "modifier_communion"
+        {
+            "EffectName"    "MartyrsInspirationStatusFXMega"
+            "Icon"          "ParryStance"
+            "IconPriority"  "50"
+
+            
+
+            "PropertiesAdd"
+            {
+                "extraDamage" "%extraDamage"
+            }
+        }
+    }
+}

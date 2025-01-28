@@ -1,5 +1,5 @@
 "UNIT_MINION_NECROMANCER_NAME_0001" = "Necromancer"
-"UNIT_MINION_NECROMANCER_LORE" = "Sulfur and rot trails in their wake, these dark wizards are no stranger to death. Despite their practices being shunned by many, they have emerged to fight beyond their last breath."
+"UNIT_MINION_NECROMANCER_LORE" = "Sulfur and rot trails in their wake, these dark wizards are no stranger to death. Although they are shunned for their practices, they have emerged to fight beyond their last breath."
 
 
 "SKILL_necro_bolt_of_sickness_NAME" = "Bolt of Sickness"
@@ -29,7 +29,7 @@
 "SKILL_necro_unstable_disease_DESCRIPTION_DATA" = "Damage: <style="damage">{RangedDmg} {icon#damageMagical}</style>\nPoison duration: <style="highlight">{poisonDuration} {icon#turns}</style>\nEPIC damage: <style="damage">{epicDamage} {icon#damageMagical}</style>\nRange: <style="highlight">{AbilityCastRange}</style>"
 
 "SKILL_necro_lord_of_the_horde_NAME" = "Lord of the Horde"
-"SKILL_necro_lord_of_the_horde_DESCRIPTION" = "Summons the resurrected corpse of a seasoned warrior. His combat prowess surpasses the limits of death itself. Its melee attacks restore 1 health and it reflects damage back to melee attackers."
+"SKILL_necro_lord_of_the_horde_DESCRIPTION" = "Summons the resurrected corpse of a seasoned warrior. Its combat prowess surpasses the limits of death itself. Its melee attacks restore 1 health and it reflects damage back to melee attackers."
 "SKILL_necro_lord_of_the_horde_DESCRIPTION_DATA" = "Summon duration: <style="highlight">{duration} {icon#turns}\nRange: <style="highlight">{AbilityCastRange}</style>"
 
 "SKILL_zombie_lifesteal_NAME" = "Life Steal"

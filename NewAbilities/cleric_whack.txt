@@ -14,21 +14,25 @@
         "01"
         {
             "var_type" "FIELD_EXPRESSION"
-            "MinDamage"  "stat(%CASTER, #attackDamage) + stat(%CASTER, #holyPoints)-1"
+            "MinDamage"  "stat(%CASTER, #attackDamage)-1"
         }
 
         "02"
         {
             "var_type" "FIELD_EXPRESSION"        
-            "MaxDamage"  "stat(%CASTER, #attackDamage) + stat(%CASTER, #holyPoints)+1"
+            "MaxDamage"  "stat(%CASTER, #attackDamage)+1"
         }
-
-        "03"
+		"03"
         {
-            "var_type"  "FIELD_EXPRESSION"
-            "holyBonus" "stat(%CASTER, #holyPoints)"
+            "var_type"                  "FIELD_FLOAT"
+            "extraArmor"                "2"
         }
 
+        "04"
+        {
+            "var_type"              "FIELD_FLOAT"
+            "duration"              "2"   
+        }
     }
 
 
@@ -49,8 +53,62 @@
                     "Damage"        "randomI(expr(%MinDamage), expr(%MaxDamage))"
                 }
             }
+			
+			"Actions"
+            {
+                "Conditional"
+                {
+                    "Condition"     "isOnState(%TARGET, #DEAD)"
+
+                    "Actions" 
+                    {
+						"ApplyModifier"
+						{
+							"ModifierName"      "modifier_whack_epic"
+							"Target"            "%SOURCE"
+							"Duration"          "%duration"
+						}
+
+                        "MarkHitLegendary"
+                        {
+                        }
+                    }
+                }
+            }
         }
     }
+	
+	"Modifiers"
+	{
+		"modifier_whack_epic"
+		{
+            "Icon"                      "Fortify"
+            "IconPriority"              "50"
+
+            "PropertiesAdd"
+            {
+                "armor_max"             "%extraArmor"
+            }
+
+            "OnAdded"
+            {
+                "GiveArmor"
+                {
+                    "Target"            "%TARGET"
+                    "ArmorAmount"       "%extraArmor"
+                }
+            }
+
+            "OnRemoved"
+            {
+                "GiveArmor"
+                {
+                    "Target"            "%TARGET"
+                    "ArmorAmount"       "0"
+                }
+            }
+		}
+	}
 
     "AIConfigB"
     {

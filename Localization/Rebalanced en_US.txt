@@ -8,8 +8,8 @@
 
 
 "SKILL_oloch_fire_barrier_rebalance_NAME" = "Fire Barrier"
-"SKILL_oloch_fire_barrier_rebalance_DESCRIPTION" = "Casts a Fire Barrier on a target ally, which grants immunity to <style="debuff">burning</style> and damage reduction to all incoming attacks. against melee attacks, the shield will explode, dealing damage in a radius."
+"SKILL_oloch_fire_barrier_rebalance_DESCRIPTION" = "Casts a Fire Barrier on a target ally, which grants immunity to <style="debuff">burning</style> and <style="debuff">stunned</style>, as well as damage reduction to all incoming attacks. Against melee attacks, the shield will explode, dealing damage in a radius."
 "SKILL_oloch_fire_barrier_rebalance_DESCRIPTION_DATA" = "Damage reduction: <style="buff">{damageReduction}</style>\nDamage retribution: <style="damage">{damageRetributed} {icon#damagePhysical}</style>\nDuration: <style="highlight">{duration} {icon#turns}</style>\nRange: <style="highlight">{AbilityCastRange}</style>"
 
 "COMBAT_MODIFIER_fire_barrier_modifier_TITLE" = "Fire Barrier"
-"COMBAT_MODIFIER_fire_barrier_modifier_DESCRIPTION" = "This unit is immune to <style="debuff">burning</style>, receives <style="buff">{damageReduction} damage</style>, and explodes against melee, dealing <style="damage">{damageRetributed} physical damage</style> in a radius."
+"COMBAT_MODIFIER_fire_barrier_modifier_DESCRIPTION" = "This unit is immune to <style="debuff">burning</style> and <style="concept">stunned</style>, receives <style="buff">{damageReduction} damage</style>, and explodes against melee, dealing <style="damage">{damageRetributed} physical damage</style> in a radius."

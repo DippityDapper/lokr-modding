@@ -27,7 +27,7 @@
         "03"
         {
             "var_type"           "FIELD_FLOAT"
-            "damageRetributed"   "3"
+            "damageRetributed"   "4"
         }
     }
 
@@ -176,13 +176,6 @@
                                             }
                                             "Actions"
                                             {
-                                               "Knockback" 
-                                                {
-                                                    "Target" "%HITTARGET"
-                                                    "Center" "unitPosition(%HITSOURCE)"
-                                                    "Strength" "1"
-                                               }
-
                                                "ApplyModifier"
                                                 {
                                                     "ModifierName"  "modifier_burning"

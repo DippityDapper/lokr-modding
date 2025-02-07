@@ -13,7 +13,7 @@
 
     "AbilityAOERange"           "%aoeRadius"
     "AbilityCastRange"          "stat(%CASTER, #rangedAttackRange)"
-    "AbilityCooldown"           "4"
+    "AbilityCooldown"           "3"
     "AbilityAPCost"             "2"
 
      "AbilitySpecial"

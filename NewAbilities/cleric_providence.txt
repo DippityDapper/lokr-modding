@@ -11,7 +11,7 @@
     "AbilityAOECenterOnCaster"  "1"
     "AbilityAOEAffectsCaster"   "1"
 
-    "AnimationID"               "SpellCastA"
+    "AnimationID"               "SpellCastB"
     "CastFXId"                  "KnightHoldTheLineCastFXMega"
     "Icon"                      "AjaxsBlessing"
 

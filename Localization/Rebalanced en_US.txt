@@ -1,0 +1,15 @@
+
+"SKILL_oloch_fire_barrier_fix_NAME" = "Fire Barrier"
+"SKILL_oloch_fire_barrier_fix_DESCRIPTION" = "Casts a Fire Barrier on a target ally, which grants immunity to <style="debuff">burning</style>, damage reduction to all incoming attacks, and damage retribution against melee attacks."
+"SKILL_oloch_fire_barrier_fix_DESCRIPTION_DATA" = "Damage reduction: <style="buff">{damageReduction}</style>\nDamage retribution: <style="damage">{damageRetributed} {icon#damageTrue}</style>\nDuration: <style="highlight">{duration} {icon#turns}</style>\nRange: <style="highlight">{AbilityCastRange}</style>"
+
+"COMBAT_MODIFIER_modifier_fire_barrier_TITLE" = "Fire Barrier"
+"COMBAT_MODIFIER_modifier_fire_barrier_DESCRIPTION" = "This unit is immune to <style="debuff">burning</style>, receives <style="buff">{damageReduction} damage</style>, and brings retribution of <style="damage">{damageRetributed} true damage</style> on the attacker."
+
+
+"SKILL_oloch_fire_barrier_rebalance_NAME" = "Fire Barrier"
+"SKILL_oloch_fire_barrier_rebalance_DESCRIPTION" = "Casts a Fire Barrier on a target ally, which grants immunity to <style="debuff">burning</style> and damage reduction to all incoming attacks. against melee attacks, the shield will explode, dealing damage in a radius."
+"SKILL_oloch_fire_barrier_rebalance_DESCRIPTION_DATA" = "Damage reduction: <style="buff">{damageReduction}</style>\nDamage retribution: <style="damage">{damageRetributed} {icon#damagePhysical}</style>\nDuration: <style="highlight">{duration} {icon#turns}</style>\nRange: <style="highlight">{AbilityCastRange}</style>"
+
+"COMBAT_MODIFIER_fire_barrier_modifier_TITLE" = "Fire Barrier"
+"COMBAT_MODIFIER_fire_barrier_modifier_DESCRIPTION" = "This unit is immune to <style="debuff">burning</style>, receives <style="buff">{damageReduction} damage</style>, and explodes against melee, dealing <style="damage">{damageRetributed} physical damage</style> in a radius."

@@ -9,7 +9,7 @@
     "Icon"                      "BlessingOfBattle"
 
     "AbilityCastRange"          "stat(%CASTER, #rangedAttackRange)"
-    "AbilityCooldown"           "4"
+    "AbilityCooldown"           "3"
     "AbilityAPCost"             "1"
 
 
@@ -17,16 +17,21 @@
     {
         "01"
         {
-            "var_type"          "FIELD_FLOAT"
-            "duration"          "2"
+            "var_type"          	"FIELD_FLOAT"
+            "duration"          	"2"
         }
         
         "02"
         {
-            "var_type"          "FIELD_FLOAT"
-            "extraDamage"       "1"
+            "var_type"          	"FIELD_EXPRESSION"
+            "DamageSelf"            "floor(stat(%CASTER, #level)/2)+1"
         }
 		
+		"03"
+        {
+            "var_type"          	"FIELD_EXPRESSION"
+            "DamageAlly"            "ceil(stat(%CASTER, #level)/2)"
+        }
     }
 
 
@@ -34,16 +39,34 @@
     {
         "ApplyModifier"
         {
-            "ModifierName"  "modifier_communion"
-            "Target"        "%TARGET"
-            "Duration"      "%duration"
+            "ModifierName"      "modifier_communion"
+            "Target"            "%TARGET"
+            "Duration"          "%duration"
+
+            "Params"
+            {
+                "ally_damage" 
+                {
+                    "type"      "FIELD_FLOAT"
+                    "value"     "expr(%DamageAlly)"
+                }
+            }
         }
 
         "ApplyModifier"
         {
-            "ModifierName"  "modifier_communion"
-            "Target"        "%CASTER"
-            "Duration"      "%duration"
+            "ModifierName"      "modifier_communion_self"
+            "Target"            "%CASTER"
+            "Duration"          "%duration"
+
+            "Params"
+            {
+                "self_damage" 
+                {
+                    "type"      "FIELD_FLOAT"
+                    "value"     "expr(%DamageSelf)"
+                }
+            }
         }
 
     }
@@ -53,15 +76,29 @@
     {
         "modifier_communion"
         {
-            "EffectName"    "MartyrsInspirationStatusFXMega"
-            "Icon"          "ParryStance"
-            "IconPriority"  "50"
+            "EffectName"        "MartyrsInspirationStatusFXMega"
+            "Icon"              "Martyr"
+            "IconPriority"      "50"
 
             
 
             "PropertiesAdd"
             {
-                "extraDamage" "%extraDamage"
+                "extraDamage"   "%ally_damage"
+            }
+        }
+		
+		"modifier_communion_self"
+        {
+            "EffectName"        "MartyrsInspirationStatusFXMega"
+            "Icon"              "Martyr"
+            "IconPriority"      "50"
+
+            
+
+            "PropertiesAdd"
+            {
+                "extraDamage"   "%self_damage"
             }
         }
     }

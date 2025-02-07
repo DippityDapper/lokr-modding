@@ -14,7 +14,7 @@
 
 "SKILL_cleric_communion_NAME" = "Communion"
 "SKILL_cleric_communion_DESCRIPTION" = "With a prayer, the Cleric gives a selected ally and himself increased attack."
-"SKILL_cleric_communion_DESCRIPTION_DATA" = "Attack Bonus: <style="buff">+{extraDamage} {icon#damagePhysical}</style>\nDuration: <style="highlight">{duration}</style> {icon#turns}\nRange: <style="highlight">{AbilityCastRange}</style>"
+"SKILL_cleric_communion_DESCRIPTION_DATA" = "Self Attack Bonus: <style="buff">+{DamageSelf} {icon#damagePhysical}</style>\nAlly Attack Bonus: <style="buff">+{DamageAlly} {icon#damagePhysical}</style>\nDuration: <style="highlight">{duration}</style> {icon#turns}\nRange: <style="highlight">{AbilityCastRange}</style>"
 "SKILL_cleric_communion_DESCRIPTION_EXTRA" = "<style="extra">The Cleric must buff an ally in order to gain the effect.</style>"
 
 "SKILL_cleric_salvation_NAME" = "Salvation"
@@ -42,4 +42,7 @@
 "COMBAT_MODIFIER_modifier_cleric_salvation_DESCRIPTION" = "This unit's damage stat is reduced to 1. Flat damage scaling on abilities is unaffected."
 
 "COMBAT_MODIFIER_modifier_communion_TITLE" = "Communion"
-"COMBAT_MODIFIER_modifier_communion_DESCRIPTION" = "This unit is blessed by <style="highlight">Communion</style>, increasing their damage by 1."
+"COMBAT_MODIFIER_modifier_communion_DESCRIPTION" = "This unit is blessed by <style="highlight">Communion</style>, increasing their damage."
+
+"COMBAT_MODIFIER_modifier_communion_self_TITLE" = "Communion"
+"COMBAT_MODIFIER_modifier_communion_self_DESCRIPTION" = "This unit is blessed by <style="highlight">Communion</style>, increasing their damage."

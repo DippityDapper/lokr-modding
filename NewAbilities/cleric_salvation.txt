@@ -3,7 +3,7 @@
     "AbilityBehavior"           "POINT_TARGET | AOE | NEEDS_VALID_TERRAIN"
 
 
-    "AnimationID"               "SpecialAttack"
+    "AnimationID"               "SpellCastA"
     "CastFXId"                  "MagicBoltCastFXMega"
     "Icon"                      "WarDrums"
     
@@ -65,18 +65,13 @@
             }
         }
         
-        "RemoveModifier"
-        {
-            "ModifierName"  "cleric_holy_points_modifier"
-            "Target"        "%SOURCE"
-        }
     }
 
     "Modifiers"
     {
         "modifier_cleric_salvation"
         {
-            "Icon"              "ParryStance"
+            "Icon"              "SpikeReforge"
             "IconPriority"      "50"
             "EffectName"        "CleaverUndyingRageStatusFXMega"
 

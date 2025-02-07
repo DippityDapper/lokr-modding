@@ -66,6 +66,7 @@
             "States"
             {
                 "CANT_BE_BURNT" "1"
+                "CANT_BE_STUNNED" "1"
             }
 
             "OnPreHit"

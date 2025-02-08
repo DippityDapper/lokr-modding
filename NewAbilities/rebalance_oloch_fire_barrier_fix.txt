@@ -1,4 +1,4 @@
-"oloch_fire_barrier_rebalance"
+"rebalance_oloch_fire_barrier_fix"
 {
     "AbilityBehavior"       "UNIT_TARGET | POSITIVE_EFFECT"
     "AbilityTeamFilter"     "TEAM_FRIENDLY"

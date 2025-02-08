@@ -10,7 +10,7 @@
     "AbilityAPCost"         "stat(%CASTER, #attackCostAP)"
     "AnimationID"           "SpecialAttack"
     "CastFXId"              "MagicBoltCastFXMega"
-    "Icon"                  "SylvanBolt" 
+    "Icon"                  "BoltOfSickness" 
 
    
     "AbilitySpecial"

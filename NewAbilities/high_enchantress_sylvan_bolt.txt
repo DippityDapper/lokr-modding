@@ -60,6 +60,36 @@
                     "Damage"        "%damage"
                 }
                 
+                "Conditional"
+                {
+                    "Condition" "isOnState(%HITTARGET, #WEAKENED)"
+
+                    "Actions" 
+                    {
+                        "MarkHitLegendary"
+                        {
+                        }
+                    }
+                }
+            }
+
+            "Actions"
+            {
+                "Conditional"
+                {
+                    "Condition" "hitIsLegendary(%HIT)"
+
+                    "Actions" 
+                    {
+                        "ApplyModifier"
+                        {
+                            "ModifierName"  "modifier_rooted"
+                            "Target"        "%HITTARGET"
+                            "Duration"      "%rootDuration"
+                            "Refresh"   "1"
+                        }
+                    }
+                }
             }
         }
     }

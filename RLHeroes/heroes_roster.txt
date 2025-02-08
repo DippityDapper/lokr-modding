@@ -11,7 +11,7 @@
 		{
 			"id" : "DemonOloch",
 			"unlockAchievement" : "oloch_unlock",
-			"locked" : true
+			"locked" : false
 		},
 		{
 			"id" : "Bruxa",

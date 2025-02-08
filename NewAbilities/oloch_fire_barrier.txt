@@ -1,4 +1,4 @@
-"oloch_fire_barrier_fix"
+"oloch_fire_barrier"
 {
     "AbilityBehavior"       "UNIT_TARGET | POSITIVE_EFFECT"
     "AbilityTeamFilter"     "TEAM_FRIENDLY"

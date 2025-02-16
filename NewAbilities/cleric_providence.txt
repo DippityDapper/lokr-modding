@@ -3,7 +3,7 @@
     "AbilityBehavior"           "UNIT_TARGET | POSITIVE_EFFECT | AOE"
     "AbilityTeamFilter"         "TEAM_FRIENDLY"
     "AbilityCastRange"          "0"
-    "AbilityCooldown"           "3"
+    "AbilityCooldown"           "4"
     "AbilityAPCost"             "1"
     "AbilityAOETeamFilter"      "TEAM_FRIENDLY"
     "AbilityAOERange"           "%aoeRadius"

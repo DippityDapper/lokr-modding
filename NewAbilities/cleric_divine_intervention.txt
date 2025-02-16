@@ -36,60 +36,125 @@
 			"duration"					"2"
 		}
 
+        "04"
+        {
+            "var_type"					"FIELD_EXPRESSION"
+			"heal"					    "ceil(stat(%CASTER, #attackDamage) / 2)"
+        }
+
     }
 
 
     "OnAbilityAction"
     {
-        "StartLogicTick"
+        "Conditional" 
         {
-            "Time"          "1.5"
-            "TickType"      "PriorityCenter"
-            "Position"      "unitPosition(%TARGET)"
-        }
+            "Condition" "hasModifier(%CASTER, #modifier_communion_self)"
 
-        "Delay"
-        {
-            "Time"          "1"
             "Actions"
             {
-                "AttachEffect"
+                "StartLogicTick"
                 {
-                    "EffectName" "DivineInterventionStrikeFXMega"
-                    "Target"     "%TARGET"
+                    "Time"          "1.5"
+                    "TickType"      "PriorityCenter"
+                    "Position"      "unitPosition(%TARGET)"
                 }
 
-                "ActOnTargets"
+                "Delay"
                 {
-                    "Target"
+                    "Time"          "1"
+                    "Actions"
                     {
-                        "Center"        "%TARGET"
-                        "Radius"        "%aoeRadius"
-                        "Teams"         "TEAM_FRIENDLY"
-                        "CustomFilter"  "customUnitFilter(#theUnit, not(isOnState(%theUnit, #PROP)))"
-                    }
-
-                    "IteratorName" "#newTarget"
-                
-                    "Actions"    
-                    {
-                        "ApplyModifier"
-                        {
-                            "ModifierName"      "cleric_divine_intervention_modifier"
-							"Target"            "%newTarget"
-							"Duration"          "%duration"
-                        }
-
-                        "RemoveModifier"
-                        {
-                            "ModifierTag"   "dot"
-                            "Target"        "%newTarget"
-                        }
-
                         "AttachEffect"
                         {
-                            "EffectName"    "MartyrsInspirationShieldFXMega"
-                            "Target"        "%newTarget"
+                            "EffectName" "DivineInterventionStrikeFXMega"
+                            "Target"     "%TARGET"
+                        }
+
+                        "ActOnTargets"
+                        {
+                            "Target"
+                            {
+                                "Center"        "%TARGET"
+                                "Radius"        "%aoeRadius"
+                                "Teams"         "TEAM_FRIENDLY"
+                                "CustomFilter"  "customUnitFilter(#theUnit, not(isOnState(%theUnit, #PROP)))"
+                            }
+
+                            "IteratorName" "#newTarget"
+                        
+                            "Actions"    
+                            {
+                                "Heal"
+                                {
+                                    "Target"        "%newTarget"
+                                    "HealAmount"    "expr(%heal)"
+                                }
+
+                                "RemoveModifier"
+                                {
+                                    "ModifierTag"   "dot"
+                                    "Target"        "%newTarget"
+                                }
+
+                                "ApplyModifier"
+                                {
+                                    "ModifierName"      "cleric_divine_intervention_modifier"
+                                    "Target"            "%newTarget"
+                                }
+                            }
+                        }
+                    }
+                }
+
+            }
+
+            "ElseActions"
+            {
+                "StartLogicTick"
+                {
+                    "Time"          "1.5"
+                    "TickType"      "PriorityCenter"
+                    "Position"      "unitPosition(%TARGET)"
+                }
+
+                "Delay"
+                {
+                    "Time"          "1"
+                    "Actions"
+                    {
+                        "AttachEffect"
+                        {
+                            "EffectName" "DivineInterventionStrikeFXMega"
+                            "Target"     "%TARGET"
+                        }
+
+                        "ActOnTargets"
+                        {
+                            "Target"
+                            {
+                                "Center"        "%TARGET"
+                                "Radius"        "%aoeRadius"
+                                "Teams"         "TEAM_FRIENDLY"
+                                "CustomFilter"  "customUnitFilter(#theUnit, not(isOnState(%theUnit, #PROP)))"
+                            }
+
+                            "IteratorName" "#newTarget"
+                        
+                            "Actions"    
+                            {
+                                "Heal"
+                                {
+                                    "Target"        "%newTarget"
+                                    "HealAmount"    "expr(%heal)"
+                                }
+
+                                "RemoveModifier"
+                                {
+                                    "ModifierTag"   "dot"
+                                    "Target"        "%newTarget"
+                                }
+                            }
                         }
                     }
                 }
@@ -101,7 +166,7 @@
 	{
 		"cleric_divine_intervention_modifier"
 		{
-			"EffectName"                "GeraldRallyStatusFXMega"
+			"EffectName"                "AjaxsBlessingAuraFXMega"
             "Icon"                      "ShieldOfRetribution"
             "IconPriority"              "50"
 

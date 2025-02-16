@@ -2541,7 +2541,7 @@
 			"health_max" 			"5"
 			"armor_max" 			"4"
 			"armor_regen_per_turn" 	"0"
-			"baseDamage"  			"3"
+			"baseDamage"  			"4"
 			"holyPoints"			"0"
 			"armor_gain_passTurn" 	"0"
 

@@ -26,7 +26,8 @@
 "SKILL_cleric_providence_DESCRIPTION_DATA" = "Cooldown Reduction: <style="highlight">{cooldownOffset}</style> {icon#turns}\nRange: <style="highlight">SELF</style>"
 
 "SKILL_cleric_divine_intervention_NAME" = "Divine Intervention"
-"SKILL_cleric_divine_intervention_DESCRIPTION" = "Invokes holy power to summon a beam of cleansing light which grants damage reduction and removes all <style="debuff">weakened</style> debuffs."
+"SKILL_cleric_divine_intervention_DESCRIPTION" = "Invokes holy power to summon a beam of cleansing light which heals and removes all <style="debuff">weakened</style> debuffs."
+"SKILL_cleric_divine_intervention_DESCRIPTION_EPIC" = "<style="epic">EPIC:</style> Grants damage reduction if the Cleric has the <style="highlight">Communion</style> buff."
 "SKILL_cleric_divine_intervention_DESCRIPTION_DATA" = "Damage Reduction: <style="buff">{damageReduction} {icon#damageTrue}</style>\nDuration: <style="highlight">{duration}</style> {icon#turns}\nRange: <style="highlight">{AbilityCastRange}</style>"
 
 "SKILL_cleric_smite_NAME" = "Smite"

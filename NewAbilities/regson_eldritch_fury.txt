@@ -136,6 +136,11 @@
                             "EffectName"      "RegsonHealingFXMega"
                             "Target"          "%TARGET"
                         }
+
+                        "HitLegendaryTriggered"
+                        {
+                            "Unit"              "%TARGET"
+                        }
                     }
                 }
 

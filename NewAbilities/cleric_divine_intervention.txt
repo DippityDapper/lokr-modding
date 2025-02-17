@@ -16,7 +16,7 @@
     "AbilityCooldown"           "3"
     "AbilityAPCost"             "2"
 
-     "AbilitySpecial"
+    "AbilitySpecial"
     {
         "01"
         {
@@ -41,7 +41,6 @@
             "var_type"					"FIELD_EXPRESSION"
 			"heal"					    "ceil(stat(%CASTER, #attackDamage) / 2)"
         }
-
     }
 
 
@@ -101,6 +100,12 @@
                                 {
                                     "ModifierName"      "cleric_divine_intervention_modifier"
                                     "Target"            "%newTarget"
+                                    "Duration"          "%duration"
+                                }
+
+                                "HitLegendaryTriggered"
+                                {
+                                    "Unit"              "%newTarget"
                                 }
                             }
                         }

@@ -93,6 +93,12 @@
                             "Type"              "DAMAGE_ARMOR"
                             "Damage"            "%damageReduction"
                         }
+                        
+                        "AddDamage"
+                        {
+                            "Type"              "DAMAGE_MAGICAL"
+                            "Damage"            "%damageReduction"
+                        }
 
                         "AttachEffect"
                         {
